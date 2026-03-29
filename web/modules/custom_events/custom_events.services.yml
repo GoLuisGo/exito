@@ -1,0 +1,13 @@
+#Aquí registramos un servicio custom.
+services:
+  custom_events.country_service:
+    class: Drupal\custom_events\Service\CountryService
+    arguments: ['@http_client', '@cache.default', '@logger.channel.custom_events']
+
+  custom_events.registration_service:
+    class: Drupal\custom_events\Service\EventRegistrationService
+    arguments: ['@database', '@datetime.time']
+
+  logger.channel.custom_events:
+    parent: logger.channel_base
+    arguments: ['custom_events']

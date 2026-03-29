@@ -1,0 +1,6 @@
+custom_events.list:
+  title: 'Eventos'
+  description: 'Listado de eventos'
+  route_name: custom_events.list
+  menu_name: main
+  weight: 0

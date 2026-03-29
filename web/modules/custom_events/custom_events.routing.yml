@@ -1,0 +1,7 @@
+custom_events.list:
+  path: '/events'
+  defaults:
+    _controller: '\Drupal\custom_events\Controller\EventListController::build'
+    _title: 'Eventos'
+  requirements:
+    _permission: 'access content'

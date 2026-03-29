@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_schema().
+ */
+function custom_events_schema(): array {
+  $schema['custom_events_registrations'] = [
+    'description' => 'Stores event registrations by user.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'event_nid' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'uid' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+    'unique keys' => [
+      'event_user_unique' => ['event_nid', 'uid'],
+    ],
+    'indexes' => [
+      'event_nid' => ['event_nid'],
+      'uid' => ['uid'],
+    ],
+  ];
+
+  return $schema;
+}

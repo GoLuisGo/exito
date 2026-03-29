@@ -1,0 +1,69 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\Core\Form\FormStateInterface;
+
+// hook para cambiar el select
+function custom_events_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  // aqui limito el alter solo a formularios del tipo de contenido eventos.
+  if ($form_id !== 'node_eventos_form' && $form_id !== 'node_eventos_edit_form') {
+    return;
+  }
+
+  $field_name = 'field_pais';
+
+  // aqui corto si el campo no existe para no romper formularios con otra estructura.
+  if (!isset($form[$field_name])) {
+    return;
+  }
+
+  // aqui valido que exista el primer widget porque es el que necesito transformar.
+  if (!isset($form[$field_name]['widget'][0])) {
+    return;
+  }
+
+  // aqui traigo paises desde el servicio para poblar el select.
+  $countries = \Drupal::service('custom_events.country_service')->getCountries();
+
+  // aqui evito tocar el campo si no tengo opciones validas.
+  if (empty($countries)) {
+    return;
+  }
+
+  // aqui uso el nombre como valor y como etiqueta para que eso mismo sea lo
+  // que termine guardado en el campo.
+  $country_options = array_combine(array_values($countries), array_values($countries));
+
+  foreach ($form[$field_name]['widget'][0] as &$element) {
+    if (is_array($element) && isset($element['#type'])) {
+      $default_value = $element['#default_value'] ?? '';
+
+      // aqui convierto el widget en select para mejorar la captura del pais.
+      $element['#type'] = 'select';
+      $element['#options'] = $country_options;
+      $element['#empty_option'] = '- selecciona un pais -';
+      $element['#default_value'] = $default_value;
+      $element['#multiple'] = FALSE;
+      $element['#size'] = 1;
+
+      // aqui salgo porque con el primer elemento valido es suficiente.
+      return;
+    }
+  }
+}
+
+
+function custom_events_theme($existing, $type, $theme, $path): array {
+  // aqui conecto el modulo para renderizar el listado de eventos con twig.
+  return [
+    'custom_events_list' => [
+      'variables' => [
+        'events' => [],
+        'logged_in' => FALSE,
+      ],
+      'template' => 'custom-events-list',
+      'path' => $path . '/templates',
+    ],
+  ];
+}

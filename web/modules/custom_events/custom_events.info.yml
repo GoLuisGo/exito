@@ -1,0 +1,8 @@
+#creamos el evento custom_events.info.yml para definir el módulo y sus dependencias.
+name: Custom Events
+type: module
+description: Gestiona eventos e integra países desde API externa.
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node
