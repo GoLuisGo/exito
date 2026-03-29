@@ -1,0 +1,11 @@
+uuid: 046acf67-c1ba-4184-9030-7424e548cdf7
+langcode: en
+status: true
+dependencies: {  }
+name: Navigation
+configEntityTypeId: component
+weight: 0
+items:
+  - block.navigation_link
+  - block.navigation_shortcuts
+  - block.navigation_user

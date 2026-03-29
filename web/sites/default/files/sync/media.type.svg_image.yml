@@ -1,0 +1,15 @@
+uuid: be014e4b-6618-4e69-bad8-1c4c8d6f7908
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kY__LOOCcyCZcd_DkDa-w7gXfB83wAXe49p2ISIAUQ8
+id: svg_image
+label: 'SVG Image'
+description: 'A locally hosted SVG file that can be displayed as an image.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_svg_image
+field_map: {  }

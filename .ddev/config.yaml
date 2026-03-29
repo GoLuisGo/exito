@@ -1,6 +1,6 @@
-name: drupal
+name: exito-demo
 type: drupal
-docroot: .
+docroot: web
 php_version: "8.4"
 webserver_type: nginx-fpm
 xdebug_enabled: false

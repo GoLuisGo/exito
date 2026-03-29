@@ -1,0 +1,38 @@
+uuid: 29f28133-d969-4e7d-9bf3-c2c1ac1f7d02
+langcode: en
+status: false
+dependencies: {  }
+active_version: af10dafe87134c69
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: dashboard_placeholder
+        label: 'Marcador de posición'
+        label_display: '0'
+        provider: dashboard
+    fallback_metadata:
+      slot_definitions: null
+  c02b777b3b56af3d:
+    settings:
+      default_settings:
+        id: dashboard_placeholder
+        label: Placeholder
+        label_display: '0'
+        provider: dashboard
+    fallback_metadata:
+      slot_definitions: null
+  af10dafe87134c69:
+    settings:
+      default_settings:
+        id: dashboard_placeholder
+        label: 'Marcador de posición'
+        label_display: '0'
+        provider: dashboard
+    fallback_metadata:
+      slot_definitions: null
+label: 'Marcador de posición'
+id: block.dashboard_placeholder
+provider: dashboard
+source: block
+source_local_id: dashboard_placeholder

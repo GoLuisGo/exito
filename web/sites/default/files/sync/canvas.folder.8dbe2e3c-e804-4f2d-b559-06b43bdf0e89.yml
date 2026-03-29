@@ -1,0 +1,8 @@
+uuid: 8dbe2e3c-e804-4f2d-b559-06b43bdf0e89
+langcode: es
+status: true
+dependencies: {  }
+name: Menús
+configEntityTypeId: component
+weight: 0
+items: {  }

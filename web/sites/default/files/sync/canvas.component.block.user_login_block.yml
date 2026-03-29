@@ -1,0 +1,40 @@
+uuid: c363730e-0ee3-4f5d-9510-523fac2a9e8c
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+active_version: 686e1381378bbac6
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: user_login_block
+        label: 'Inicio de sesión'
+        label_display: '0'
+        provider: user
+    fallback_metadata:
+      slot_definitions: null
+  c6887f2904ac0974:
+    settings:
+      default_settings:
+        id: user_login_block
+        label: 'User login'
+        label_display: '0'
+        provider: user
+    fallback_metadata:
+      slot_definitions: null
+  686e1381378bbac6:
+    settings:
+      default_settings:
+        id: user_login_block
+        label: 'Inicio de sesión'
+        label_display: '0'
+        provider: user
+    fallback_metadata:
+      slot_definitions: null
+label: 'Inicio de sesión'
+id: block.user_login_block
+provider: user
+source: block
+source_local_id: user_login_block

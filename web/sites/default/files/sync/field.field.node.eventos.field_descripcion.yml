@@ -1,0 +1,19 @@
+uuid: fb3d4e71-1ba3-4fbc-acbf-50284109205e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.eventos
+id: node.eventos.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: eventos
+label: descripcion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

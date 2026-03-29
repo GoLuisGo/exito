@@ -1,0 +1,40 @@
+uuid: 2d24ac8f-3a42-47a8-9541-e22a15ca405b
+langcode: en
+status: false
+dependencies:
+  module:
+    - navigation
+active_version: ac8aabf57e956631
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: navigation_shortcuts
+        label: 'Atajos de navegación'
+        label_display: '0'
+        provider: navigation
+    fallback_metadata:
+      slot_definitions: null
+  2891751bf7069a8f:
+    settings:
+      default_settings:
+        id: navigation_shortcuts
+        label: 'Navigation Shortcuts'
+        label_display: '0'
+        provider: navigation
+    fallback_metadata:
+      slot_definitions: null
+  ac8aabf57e956631:
+    settings:
+      default_settings:
+        id: navigation_shortcuts
+        label: 'Atajos de navegación'
+        label_display: '0'
+        provider: navigation
+    fallback_metadata:
+      slot_definitions: null
+label: 'Atajos de navegación'
+id: block.navigation_shortcuts
+provider: navigation
+source: block
+source_local_id: navigation_shortcuts

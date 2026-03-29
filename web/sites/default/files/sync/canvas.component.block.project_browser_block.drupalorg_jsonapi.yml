@@ -1,0 +1,41 @@
+uuid: ea26d380-df06-4c1a-981e-dd0b4fdd4bf1
+langcode: en
+status: false
+dependencies:
+  module:
+    - project_browser
+active_version: 9d9b7839d95ee6a1
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'project_browser_block:drupalorg_jsonapi'
+        label: 'Módulos de terceros'
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+  e37816eb455058be:
+    settings:
+      default_settings:
+        id: 'project_browser_block:drupalorg_jsonapi'
+        label: 'Contrib modules'
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Módulos de terceros'
+id: block.project_browser_block.drupalorg_jsonapi
+provider: project_browser
+source: block
+source_local_id: 'project_browser_block:drupalorg_jsonapi'

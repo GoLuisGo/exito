@@ -1,0 +1,25 @@
+uuid: 3d37e89e-d58d-476d-9bad-200f9c178566
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - blank
+id: blank_navegacionprincipal
+theme: blank
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

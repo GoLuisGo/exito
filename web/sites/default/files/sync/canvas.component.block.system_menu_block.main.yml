@@ -1,0 +1,39 @@
+uuid: 7d68102b-1396-4ccb-9676-dac0d4cf6a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+active_version: 489d55dda7cfbe6a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:main'
+        label: 'Navegación principal'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+  023ff7ba63f80798:
+    settings:
+      default_settings:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Navegación principal'
+id: block.system_menu_block.main
+provider: system
+source: block
+source_local_id: 'system_menu_block:main'

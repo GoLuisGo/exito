@@ -1,0 +1,39 @@
+uuid: c7e4924f-8680-49ce-9526-b08c809e9919
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+active_version: 2fa9a85670f59494
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:admin'
+        label: Administración
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+  92a49829257c9e0c:
+    settings:
+      default_settings:
+        id: 'system_menu_block:admin'
+        label: Administration
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: Administración
+id: block.system_menu_block.admin
+provider: system
+source: block
+source_local_id: 'system_menu_block:admin'

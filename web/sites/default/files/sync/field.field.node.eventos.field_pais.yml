@@ -1,0 +1,19 @@
+uuid: 69334fca-5f1f-4291-a1a4-d6bd79ca5e0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais
+    - node.type.eventos
+id: node.eventos.field_pais
+field_name: field_pais
+entity_type: node
+bundle: eventos
+label: pais
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

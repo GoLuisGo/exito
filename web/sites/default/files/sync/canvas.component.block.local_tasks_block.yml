@@ -1,0 +1,44 @@
+uuid: 442fa03b-e7a6-4600-aa65-81a5e13a9687
+langcode: en
+status: false
+dependencies: {  }
+active_version: d969904ae40ecc85
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: local_tasks_block
+        label: Pestañas
+        label_display: '0'
+        provider: core
+        primary: true
+        secondary: true
+    fallback_metadata:
+      slot_definitions: null
+  429966cebad152ba:
+    settings:
+      default_settings:
+        id: local_tasks_block
+        label: Tabs
+        label_display: '0'
+        provider: core
+        primary: true
+        secondary: true
+    fallback_metadata:
+      slot_definitions: null
+  d969904ae40ecc85:
+    settings:
+      default_settings:
+        id: local_tasks_block
+        label: Pestañas
+        label_display: '0'
+        provider: core
+        primary: true
+        secondary: true
+    fallback_metadata:
+      slot_definitions: null
+label: Pestañas
+id: block.local_tasks_block
+provider: core
+source: block
+source_local_id: local_tasks_block

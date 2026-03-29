@@ -1,0 +1,44 @@
+uuid: 609aae67-c683-4ccc-b75c-d172c2facd58
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.eventos
+  module:
+    - coffee
+    - contextual
+    - drupical
+    - file
+    - honeypot
+    - klaro
+    - media
+    - navigation
+    - node
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access coffee'
+  - 'access content'
+  - 'access contextual links'
+  - 'access events'
+  - 'access navigation'
+  - 'bypass honeypot protection'
+  - 'create eventos content'
+  - 'delete any eventos content'
+  - 'delete eventos revisions'
+  - 'delete own eventos content'
+  - 'delete own files'
+  - 'edit any eventos content'
+  - 'edit own eventos content'
+  - 'revert eventos revisions'
+  - 'use klaro'
+  - 'view eventos revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view the administration theme'

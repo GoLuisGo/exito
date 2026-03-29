@@ -1,0 +1,55 @@
+uuid: d3827e54-2440-4bc0-a1a3-8de0b6657cae
+langcode: en
+status: false
+dependencies:
+  module:
+    - project_browser
+active_version: b9e29c3ad318cf53
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'project_browser_block:recipes'
+        label: Recetas
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+  ac1129da9043000f:
+    settings:
+      default_settings:
+        id: 'project_browser_block:recipes'
+        label: Recipes
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+  b9e29c3ad318cf53:
+    settings:
+      default_settings:
+        id: 'project_browser_block:recipes'
+        label: Recetas
+        label_display: '0'
+        provider: project_browser
+        paginate: true
+        page_sizes: '12, 24, 36, 48'
+        sort_options: null
+        default_sort: null
+        filters: null
+    fallback_metadata:
+      slot_definitions: null
+label: Recetas
+id: block.project_browser_block.recipes
+provider: project_browser
+source: block
+source_local_id: 'project_browser_block:recipes'

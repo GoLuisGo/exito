@@ -1,0 +1,40 @@
+uuid: 3fe6fe62-26f7-4ad8-8dd4-8479dd53fdc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+active_version: 0011c8a433acf9a0
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: system_breadcrumb_block
+        label: 'Enlaces de ayuda a la navegación'
+        label_display: '0'
+        provider: system
+    fallback_metadata:
+      slot_definitions: null
+  ad6359c331fc7c45:
+    settings:
+      default_settings:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        label_display: '0'
+        provider: system
+    fallback_metadata:
+      slot_definitions: null
+  0011c8a433acf9a0:
+    settings:
+      default_settings:
+        id: system_breadcrumb_block
+        label: 'Enlaces de ayuda a la navegación'
+        label_display: '0'
+        provider: system
+    fallback_metadata:
+      slot_definitions: null
+label: 'Enlaces de ayuda a la navegación'
+id: block.system_breadcrumb_block
+provider: system
+source: block
+source_local_id: system_breadcrumb_block

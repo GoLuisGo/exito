@@ -1,0 +1,9 @@
+uuid: 6a1f740b-8bfe-4521-9262-38bb7886851b
+langcode: es
+status: true
+dependencies: {  }
+name: Otro(s)
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.navigation.title
