@@ -52,7 +52,19 @@ ddev composer install
 Importar la base de datos:
 
 ```bash
-ddev import-db --src=.ddev/db/exito.sql.gz
+ddev import-db --file=.ddev/db/exito.sql.gz
+```
+
+Habilitar modulo personalisado:
+
+```bash
+ddev drush en custom_events -y
+```
+
+limpiar cache:
+
+```bash
+ddev drush cr
 ```
 
 Abrir el sitio:
