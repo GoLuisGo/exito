@@ -92,7 +92,7 @@ No es necesario ejecutar `site:install`.
 
 Usuario administrador:
 
-* Usuario: [luisgomezarango@gmail.com](mailto:luisgomezarango@gmail.com)
+* Usuario: [luisgomezarango@gmail.com](mailto:luisgomezarango@gmail.com) /admin
 * Contraseña: 123
 
 Usuario de prueba:
