@@ -50,6 +50,10 @@ Importar la base de datos:
 ```bash
 ddev import-db --src=.ddev/db/exito.sql.gz
 ```
+Instalar drupal11:
+```bash
+ddev config --project-type=drupal --docroot=web
+```
 
 Abrir el sitio:
 
